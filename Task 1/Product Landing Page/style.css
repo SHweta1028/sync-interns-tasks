@@ -1,0 +1,335 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #d0d4d5;
+    position: relative;
+}
+
+/* navigation bar */
+
+#nav{
+    height: 90px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    height: 70px;
+    margin-right: 100px;
+}
+
+#nav_part1 h4{
+    margin-right: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#nav_part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_part2 i{
+    margin-right: 60px;
+    font-size: 30px;
+}
+
+/* main content */
+
+#content{
+    width: 100%;
+    height: calc(100% - 90px);
+    position: relative;
+    display: flex;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    padding: 70px 150px;
+}
+
+#left h5{
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    margin-bottom: 30px;
+}
+
+#left h1{
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#left p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    width: 80%;
+    text-align: justify;
+}
+
+#left button{
+    background-color: black;
+    color: aliceblue;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border-top-left-radius: 0%;
+    margin-top: 20px;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: relative;
+    padding: 120px;
+    column-count: 3; /* Set the number of columns */
+    column-gap: 55%; /* Optional gap between columns */
+    overflow-x: auto;
+    /* margin-right: 40px; */
+}
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 420px;
+    width: 380px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #c7fa50;
+    padding: 10px 40px;
+    border-bottom-right-radius: 20px;
+}
+
+.elem h5{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px 40px;
+    font-weight: 400;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* about us */
+
+.about {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content .content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.about-content p {
+    margin-right: 50px;
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-content img {
+    width: 20%;
+}
+
+/* contact us */
+
+.content{
+    margin-left: 180px;
+    margin-right: 180px;
+    
+}
+
+.body{
+    background-color: #d0d4d5;
+}
+
+.content h1{
+    text-align: center;
+}
+
+.container{
+    /* max-width: 50px; */
+    width: 70%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+
+  .container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #9b59b6;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   }
+   form .button input:hover{
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+}
